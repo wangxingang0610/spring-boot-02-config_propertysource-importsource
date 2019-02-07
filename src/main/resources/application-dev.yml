@@ -1,0 +1,21 @@
+
+person:
+  id: 1
+  age: 10
+  first-name: aa_______________
+  birth-day: 2019/09/10
+
+
+  list:
+    - a
+    - b
+    - c
+
+  map:
+    k1: v1
+    k2: v2
+
+  cat:
+    name: cat
+    age: 9
+

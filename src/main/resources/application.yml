@@ -1,40 +1,32 @@
-#person:
-#  id: 9
-#  age: 20
-#  first-name: aa
-#  birth-day: 2019/09/10
-#
-#
-#  list:
-#    - a
-#    - b
-#    - c
-#
-#  map:
-#    k1: v1
-#    k2: v2
-#
-#  cat:
-#    name: cat
-#    age: 9
+server:
+  port: 8080
 
-person:
-  id: ${random.int}
-  age: ${random.int}
-  first-name: ${random.uuid}________${person.age}
-  birth-day: 2019/09/10
+spring:
+  profiles:
+    active: pro
+
+---
+server:
+  port: 8081
+spring:
+  profiles:test
 
 
-  list:
-    - a
-    - b
-    - c
 
-  map:
-    k1: v1
-    k2: v2
+---
 
-  cat:
-    name: cat
-    age: 9
+server:
+  port: 8082
+spring:
+  profiles:dev
 
+
+
+---
+
+
+
+server:
+  port: 8083
+spring:
+  profiles:pro
