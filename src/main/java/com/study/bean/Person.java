@@ -10,6 +10,7 @@ import java.util.Map;
 
 //@**PropertySource**：加载指定的配置文件
 @PropertySource(value = "classpath:person.properties")
+@ConfigurationProperties(prefix = "person")
 @Component
 public class Person {
     private Integer id;
